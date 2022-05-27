@@ -1,0 +1,57 @@
+.pack {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.pack__coins {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pack__canvas {
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.pack__total {
+  font-size: 25px;
+
+}
+
+.pack__balance {
+
+  color: #f7931a;
+}
+
+.pack__item {
+  display: flex;
+  border-bottom: 1px solid #f7931a;
+}
+
+.pack__item + .pack__item {
+  margin-top: 100px;
+}
+
+.pack__input {
+  font-size: 18px;
+  padding: 15px 0;
+  border: none;
+}
+
+.pack__input::-webkit-outer-spin-button,
+.pack__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.pack__currency {
+  display: flex;
+  align-items: center;
+}
+
+.pack__img {
+  margin-right: 10px;
+  max-width: 37px;
+}

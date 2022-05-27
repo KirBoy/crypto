@@ -1,0 +1,87 @@
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 1000px;
+}
+
+.converter__inner {
+  padding-top: 10px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+
+.converter__field {
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+  padding-left: 12px;
+  border-radius: 4px;
+}
+
+.converter__list {
+  position: absolute;
+  right: 0;
+  bottom: -58px;
+}
+
+.converter__item {
+  cursor: pointer;
+  width: 115px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid black;
+  border-left: 1px solid #f7931a;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+
+}
+
+.converter__currency {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  width: 115px;
+  border-left: 1px solid #f7931a;
+  padding: 12px 0;
+}
+
+.converter__img {
+  max-width: 32px;
+  margin: 0 7px;
+}
+
+.converter__arrow {
+  position: absolute;
+  border: 8px solid transparent;
+  border-top: 8px solid #e5e4e4;
+  right: 10px;
+  top: 45%;
+}
+
+.converter__equal {
+  font-size: 35px;
+
+}
+
+.converter__canvas {
+
+}
+
+.converter__input {
+  padding: 12px 0;
+  border: none;
+}
+
+.converter__input::-webkit-outer-spin-button,
+.converter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

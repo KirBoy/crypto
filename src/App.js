@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, Link} from "react-router-dom";
+import Converter from "./conponents/Converter/Convertor";
+import CriptoPack from "./conponents/CriptoPack/CriptoPack";
+import Navigation from "./conponents/Navigation";
+import PageNotFound from "./conponents/PageNotFound/PageNotFound";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <Routes>
+            <Route path="/" element={<Navigation/>}>
+                <Route path="converter"  element={<Converter/>}/>
+                <Route path="criptopack" element={<CriptoPack/>}/>
+            </Route>
+            <Route path="*" element={<PageNotFound/>}  />
+        </Routes>
+    );
 }
 
 export default App;
